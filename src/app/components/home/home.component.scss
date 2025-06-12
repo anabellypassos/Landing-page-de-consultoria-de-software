@@ -1,0 +1,91 @@
+@import '../../../color-variables.scss'; // ← tem que ser a primeira linha
+
+
+.main-section {
+  display: flex;
+  flex-direction: column; /* Mobile first */
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center; /* Centraliza o texto */
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: $secondary-text;
+}
+
+h1 {
+  font-size: 80px;
+  word-break: break-word;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  color:$primary-text;
+}
+
+.headline {
+  margin-bottom: 14px; /* Espaço entre texto e imagem no mobile */
+}
+
+
+
+.benef-section{
+  margin-top: 40px;
+   display: flex;
+  flex-direction: column; /* Mobile first */
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center; /* Centraliza o texto */
+  gap: 10px;
+
+}
+
+.porcentage-section{
+    font-size: 60px;
+  font-weight:600;
+  font-family: "Roboto", sans-serif;
+  color:$primary-text;
+}
+.sub-benef{
+   font-size: 30px;
+  word-break: break-word;
+  font-weight:300;
+  font-family: "Roboto", sans-serif;
+  max-width: 600px; /* ou menos, ex: 300px */
+
+
+
+.escala-section {
+  background: linear-gradient(180deg, #230cf3, #7168c7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+
+}
+
+@media (min-width: 1080px) {
+  .main-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .headline {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+  .benef-section{
+
+  flex-direction: row;
+
+}
+}
