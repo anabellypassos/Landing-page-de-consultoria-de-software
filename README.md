@@ -1,4 +1,25 @@
-# LandingPage
+# Landing Page - Consultoria de Software
+📋 O que é uma Landing Page?
+Uma landing page é uma página web única, focada em apresentar uma mensagem clara e objetiva ao visitante, com o objetivo de converter essa visita em uma ação, como um contato, cadastro ou contratação. Ela é pensada para ser simples, direta e visualmente atraente, facilitando o engajamento do usuário.
+🚀 Proposta do Projeto
+Este projeto consiste no desenvolvimento front-end de uma landing page para consultoria de software, utilizando tecnologias modernas como:
+
+Angular
+
+TypeScript
+
+SCSS (Sass)
+
+O foco é criar uma interface moderna, responsiva e eficiente, que comunique os serviços de consultoria de forma clara e profissional, garantindo uma ótima experiência para o usuário.
+
+⚙️ Tecnologias Utilizadas
+Angular — Framework para desenvolvimento web front-end
+
+TypeScript — Superset do JavaScript com tipagem estática
+
+SCSS — Pré-processador CSS para estilos mais organizados e reutilizáveis
+
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
 
@@ -57,3 +78,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+📌 Considerações Finais
+Este projeto tem como objetivo entregar uma landing page moderna e eficiente, aplicando as melhores práticas com Angular e TypeScript, para apresentar serviços de consultoria de software de forma clara e profissional.
