@@ -1,4 +1,4 @@
-@import '../../../color-variables.scss'; // ← tem que ser a primeira linha
+@use '../../../color-variables' as *;
 
 
 .main-section {
@@ -70,7 +70,12 @@ h1 {
 
 
 }
-
+.cta-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 @media (min-width: 1080px) {
   .main-section {
     flex-direction: row;

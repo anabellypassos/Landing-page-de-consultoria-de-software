@@ -1,17 +1,18 @@
-.btn{
+.btn {
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
 
-  &:disabled{
-    opacity: 0.6;
-  }
-  &.primary{
+  &.primary {
     color: white;
-    background: -webkit-gradient(180deg, $primary-color,$primary-color);
+    background: linear-gradient(180deg, #4838D1, #230cf3);
+  }
 
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px;
+  &.secundary {
+    color: #0F172A;
+    background: white;
   }
 }
