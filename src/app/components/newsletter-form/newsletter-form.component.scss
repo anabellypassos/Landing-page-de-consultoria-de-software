@@ -1,0 +1,63 @@
+/* Corrigido para usar .form-section (com hífen) para corresponder ao HTML */
+.form-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Você tem dois justify-content, o último prevalece */
+  background: #230cf3;
+
+  /* A sintaxe aninhada abaixo está correta para um arquivo .scss */
+  h3 {
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white; /* Adicionado para melhor contraste com o fundo azul */
+  }
+
+  p {
+    padding: 20px;
+    font-size: 18px; /* Ajustei o tamanho da fonte para o parágrafo, 36px é muito grande */
+    font-weight: 400;
+    color: white; /* Adicionado para melhor contraste com o fundo azul */
+  }
+
+  .text {
+    flex: 1;
+    padding-right: 40px; /* Adicionado um espaçamento para separar do formulário */
+  }
+
+  form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+  }
+
+  label {
+    color: white;
+    margin-bottom: 8px;
+    align-self: flex-start;
+  }
+
+  input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 40px; /* Altura ajustada */
+    margin-bottom: 40px;
+    color: white; /* Adicionado para que o texto digitado seja visível */
+    font-size: 16px;
+  }
+}
+
+/* A media query já estava correta */
+@media (min-width: 1080px) {
+  .form-section {
+    flex-direction: row;
+    align-items: flex-start; /* Alinhado ao topo para um layout melhor */
+  }
+}
