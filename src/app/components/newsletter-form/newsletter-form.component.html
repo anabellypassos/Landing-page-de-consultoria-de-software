@@ -1,27 +1,32 @@
 <section class="form-section">
-<div class="text">
-  <h3>
-    Fique por dentro das tendências
-  </h3>
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-     Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it
-       to make a type specimen book. It has survived not only five centuries,
-       but also the leap into electronic typesetting, remaining essentially
-        unchanged. It was popularised in the 1960s with the release of Letraset
-        sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-        software like Aldus PageMaker including versions of Lorem Ipsum
-  </p>
-</div>
+  <div class="text">
+    <h3>
+      Fique por dentro das tendências
+    </h3>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s...
+    </p>
+  </div>
 
-<form>
-  <label for="nome ">Nome</label>
-  <input id="nome"/>
+
+
+    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()">
+
+    <label for="nome">Nome</label>
+    <input id="nome" formControlName="name" placeholder="Seu nome completo"/>
+
     <label for="email">Email</label>
-    <input id="email"/>
+    <input id="email" formControlName="email" placeholder="Seu melhor email"/>
 
-<app-bnt-primary class="cta-section" btn-text="se inscreva" [variant]="'primary'"></app-bnt-primary>
 
-</form>
+
+    <app-bnt-primary
+      btn-text="se inscreva"
+      [variant]="'primary'"
+     [loading]="loading()"
+    ></app-bnt-primary>
+
+  </form>
 </section>
