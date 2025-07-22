@@ -12,13 +12,15 @@
 }
 
 span {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
+
   color: $secondary-text;
 }
 
 h1 {
+  margin-bottom: 15px;
   font-size: 80px;
   word-break: break-word;
   font-weight: 900;
@@ -30,6 +32,12 @@ h1 {
   margin-bottom: 14px; /* Espaço entre texto e imagem no mobile */
 }
 
+.imagem-in {
+  width:  400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 
 .benef-section{
@@ -75,6 +83,14 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+}
+
+.imagem-conf{
+position: absolute;
+margin-left:70px;
+}
+.sobrepo{
+  position: relative;
 }
 @media (min-width: 1080px) {
   .main-section {
